@@ -5,10 +5,11 @@ from flask import Flask, request, Response
 from rossmann.Rossmann import Rossmann
 
 # Loading model
-model = pickle.load(open('/Users/hallanmiranda/Documents/repos/meus_projeto_portfolio/dsp_rossman/model/model_rossmann.pkl', 'rb'))
+model = pickle.load(open('model/model_rossmann.pkl', 'rb'))
 
 # Initialize API
-app = Flask( __name__ )
+app = Flask(__name__)
+
 
 @app.route('/rossmann/predict', methods=['POST'])
 def Rossomann_predict():
@@ -36,6 +37,6 @@ def Rossomann_predict():
     else:
         return Response('{}', status=200, mimetype='application/json')
 
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-    
