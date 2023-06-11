@@ -8,14 +8,14 @@ from flask import Flask, request, Response
 
 
 # #  info abaut the bot
-# https://api.telegram.org/bot6141403083:AAEAL3s7VP9ugaNLAnMEdo2Bzh_DpJIPJM4/getMe
+# https:///getMe
 
 # # Get update
-# https://api.telegram.org/bot6141403083:AAEAL3s7VP9ugaNLAnMEdo2Bzh_DpJIPJM4/getUpdates
+# https/getUpdates
 
 # # webhook
 # # Send massege
-# https://api.telegram.org/bot6141403083:AAEAL3s7VP9ugaNLAnMEdo2Bzh_DpJIPJM4/getUpdates
+# https:///getUpdates
 
 
 def send_massege (chat_id, text):
