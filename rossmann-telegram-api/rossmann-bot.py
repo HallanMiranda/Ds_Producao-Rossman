@@ -5,7 +5,7 @@ from flask import Flask, request, Response
 
 
 # constants
-TOKEN = '6141403083:AAEAL3s7VP9ugaNLAnMEdo2Bzh_DpJIPJM4'
+
 
 # #  info abaut the bot
 # https://api.telegram.org/bot6141403083:AAEAL3s7VP9ugaNLAnMEdo2Bzh_DpJIPJM4/getMe
@@ -14,9 +14,6 @@ TOKEN = '6141403083:AAEAL3s7VP9ugaNLAnMEdo2Bzh_DpJIPJM4'
 # https://api.telegram.org/bot6141403083:AAEAL3s7VP9ugaNLAnMEdo2Bzh_DpJIPJM4/getUpdates
 
 # # webhook
-# https://api.telegram.org/bot6141403083:AAEAL3s7VP9ugaNLAnMEdo2Bzh_DpJIPJM4/setWebhook?url= 
-
-
 # # Send massege
 # https://api.telegram.org/bot6141403083:AAEAL3s7VP9ugaNLAnMEdo2Bzh_DpJIPJM4/getUpdates
 
