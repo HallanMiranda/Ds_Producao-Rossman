@@ -1,6 +1,6 @@
 # Previsão de Vendas - Rede de Farmácias Rossmann
 
-![find map](api/img/rossmann.png)
+![find map](../img/rossmann.png)
 
 A Rossmann é uma rede de farmácias que opera em mais de 3.000 lojas em 7 países europeus, empregando cerca de 56 mil colaboradores. A empresa disponibilizou dados de vendas de suas filiais na plataforma [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/overview), contendo mais de 1 milhão de registros com 18 características únicas para cada venda.
 # 1. Problema de Negócio
@@ -40,7 +40,7 @@ Para construir a solução, as seguintes premissas foram consideradas:
 # 3. Estratégia da Solução
 Para garantir uma entrega rápida e eficiente da primeira solução, com o objetivo de trazer valor para a empresa e permitir decisões ágeis por parte do CFO, foi adotado o método CRISP-DS.
 
-![Mapa Mental](api/img/crisp_ds.png)
+![Mapa Mental](../img/crisp_ds.png)
 
 O método CRISP-DS é composto por 9 etapas cíclicas, em que a cada iteração dessas etapas, o resultado de negócio é aprimorado, buscando entregas cada vez mais rápidas e de maior qualidade, com maior precisão. Isso possibilita que as equipes que utilizarão os resultados desenvolvidos tenham um produto minimamente utilizável já na primeira entrega, e que seja aprimorado ao longo do tempo.
 
