@@ -1,6 +1,6 @@
 # Previsão de Vendas - Rede de Farmácias Rossmann
 
-![find map](api/img/rossmann.png)
+![find map](img/rossmann.png)
 
 A Rossmann é uma rede de farmácias que opera em mais de 3.000 lojas em 7 países europeus, empregando cerca de 56 mil colaboradores. A empresa disponibilizou dados de vendas de suas filiais na plataforma [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/overview), contendo mais de 1 milhão de registros com 18 características únicas para cada venda.
 # 1. Problema de Negócio
@@ -40,7 +40,7 @@ Para construir a solução, as seguintes premissas foram consideradas:
 # 3. Estratégia da Solução
 Para garantir uma entrega rápida e eficiente da primeira solução, com o objetivo de trazer valor para a empresa e permitir decisões ágeis por parte do CFO, foi adotado o método CRISP-DS.
 
-![Mapa Mental](api/img/crisp_ds.png)
+![Mapa Mental](img/crisp_ds.png)
 
 O método CRISP-DS é composto por 9 etapas cíclicas, em que a cada iteração dessas etapas, o resultado de negócio é aprimorado, buscando entregas cada vez mais rápidas e de maior qualidade, com maior precisão. Isso possibilita que as equipes que utilizarão os resultados desenvolvidos tenham um produto minimamente utilizável já na primeira entrega, e que seja aprimorado ao longo do tempo.
 
@@ -81,7 +81,7 @@ Para criar a solução, foram utilizadas as seguintes ferramentas:
 # 4. Top 3 Insights
 Foi criado um Mindmap para ajudar na construção de Hipóteses, a fim de facilitar e delimitar o escopo da etapa de análise exploratória.
 
-![](api/img/mind_map.png)
+![](img/mind_map.png)
 
 Através do Mindmap, foram geradas 19 hipóteses de negócio. Dessas, 12 foram selecionadas para validação, confirmando premissas da equipe de negócios e do responsável pelo problema. Além disso, foram gerados insights relevantes para ambos os grupos.
 
@@ -90,17 +90,17 @@ Dos 12 hipóteses verificadas, destacaram-se três principais insights.
 ## Insight 1: Lojas Abertas durante o feriado de Natal deveriam vender mais
 **Hipótese Falsa:** Lojas que ficam abertas durante o feriado de natal não vendem mais em comparação a outros feriados
 
-![](api/img/hip_1.png)
+![](img/hip_1.png)
 
 ## Insight 2: Lojas Deveriam vender mais depois do dia 10 de cada mês
 **Hipótese Verdadeira:** Lojas realmente vendem mais depois do dia 10 de cada mês
 
-![](api/img/hip_2.png)
+![](img/hip_2.png)
 
 ## Insight 3: Lojas deveriam vender mais no segundo semestre do ano
 **Hipótese Falsa:** Lojas vendem MENOS no segundo semestre do ano
 
-![](api/img/hip_3.png)
+![](img/hip_3.png)
 
 # 5. Modelos de Machine Learning
 No primeiro ciclo do projeto, foram selecionados cinco algoritmos para teste, visando identificar o algoritmo com melhor desempenho e custo de implementação. Nessa etapa inicial, optou-se pela simplicidade, considerando que era o primeiro ciclo do projeto e o objetivo principal era entregar uma solução mínima utilizável para a equipe de negócios e polo CFO.
@@ -133,7 +133,7 @@ Após os testes inicias, obtivemos os seguintes resultados:
 
 Após testar os algoritmos selecionados, utilizamos a técnica de ***Cross Validation*** para validar os resultados e garantir a real performance de cada modelo utilizado. No nosso caso, como estávamos lidando com uma série temporal, aplicamos uma forma específica de ***Cross Validation*** que leva em consideração a ordem cronológica dos dados durante o treinamento dos algoritmos.Significa que respeitamos a sequência temporal em que os dados foram coletados ou registrados. Isso é importante quando estamos trabalhando com séries temporais, onde a ordem dos eventos é relevante. Essa abordagem nos permite obter uma avaliação mais precisa do desempenho dos modelos ao longo do tempo.
 
-![](api/img/cross_validation.png)
+![](img/cross_validation.png)
 
 Com esse método de validação, foram obtidas as seguintes performances:
 
@@ -173,7 +173,7 @@ Como podemos observar nos dois primeiro gráficos abaixo, o modelo selecionado o
 
 Já nos dois últimos gráficos, podemos observar uma distribuição normal a cerca das previsões, o que nos inidica um bom resultado do modelo selecionado, além de podermos verificar a distribuição dos erros do modelo.
 
-![](api/img/performance.png)
+![](img/performance.png)
 
 # 7. Resultado de Negócio
 Com o modelo selecionado e treinado, obtivemos a seguinte performance de negócio para as 5 melhores lojas:
@@ -208,7 +208,7 @@ Como resultado final, temos os seguintes cenários:
 | Melhor Cenário | \$ 286,644,307.44 |
 
 ## 7.1. Distribuição das Previsões por Loja
-![](api/img/business_performance.png)
+![](img/business_performance.png)
 
 
 # 8. Conclusões
